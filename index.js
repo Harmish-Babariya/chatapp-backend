@@ -50,7 +50,7 @@ io.on('connection', (socket) => {
 app.use(router);
 app.use(cors());
 app.use((req,res) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8888');
+    res.setHeader('Access-Control-Allow-Origin', '*');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
